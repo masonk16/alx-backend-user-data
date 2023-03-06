@@ -11,4 +11,14 @@
 
 <hr>
 
-#### Directory: [0x01-Basic_authentication]
+#### Directory: [0x01-Basic_authentication](https://github.com/masonk16/alx-backend-user-data/tree/master/0x01-Basic_authentication)
+
+##### Learning Objectives
+
+* What authentication means
+* What Base64 is
+* How to encode a string in Base64
+* What Basic authentication means
+* How to send the Authorization header
+
+<hr>
