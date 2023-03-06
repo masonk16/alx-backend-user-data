@@ -10,3 +10,5 @@
 * How to authenticate to a database using environment variables
 
 <hr>
+
+#### Directory: [0x01-Basic_authentication]
