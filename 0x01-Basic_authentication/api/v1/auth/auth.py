@@ -37,9 +37,13 @@ class Auth:
     def authorization_header(self, request=None) -> str:
         """
         Gets the authorization header field from the request.
-        :param request:
         :return:
+            - If request is None, returns None
+            - If request doesn’t contain the header key Authorization, returns None
+            - value of the header request Authorization
         """
+        if request is not None:
+            return request.headers.get('Authorization', None)
         return None
 
     def current_user(self, request=None) -> TypeVar('User'):
