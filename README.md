@@ -22,3 +22,15 @@
 * How to send the Authorization header
 
 <hr>
+
+#### Directory: [0x02-Session_authentication](https://github.com/masonk16/alx-backend-user-data/tree/master/0x02-Session_authentication)
+
+##### Learning Objectives
+
+* What authentication means
+* What session authentication means
+* What Cookies are
+* How to send Cookies
+* How to parse Cookies
+
+<hr>
