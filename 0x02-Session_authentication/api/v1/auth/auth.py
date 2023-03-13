@@ -40,7 +40,7 @@ class Auth:
         Gets the authorization header field from the request.
         :return:
             - If request is None, returns None
-            - If request doesn’t contain the header key Authorization, returns None
+            - None, if request doesn’t contain header key Authorization
             - value of the header request Authorization
         """
         if request is not None:
