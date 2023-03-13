@@ -22,8 +22,8 @@ class SessionDBAuth(SessionExpAuth):
         session_id = super().create_session(user_id)
         if type(session_id) == str:
             kwargs = {
-                'user_id': user_id,
-                'session_id': session_id,
+                "user_id": user_id,
+                "session_id": session_id,
             }
             user_session = UserSession(**kwargs)
             user_session.save()
@@ -35,7 +35,7 @@ class SessionDBAuth(SessionExpAuth):
         a given session id.
         """
         try:
-            sessions = UserSession.search({'session_id': session_id})
+            sessions = UserSession.search({"session_id": session_id})
         except Exception:
             return None
         if len(sessions) <= 0:
@@ -53,10 +53,11 @@ class SessionDBAuth(SessionExpAuth):
         """
         session_id = self.session_cookie(request)
         try:
-            sessions = UserSession.search({'session_id': session_id})
+            sessions = UserSession.search({"session_id": session_id})
         except Exception:
             return False
         if len(sessions) <= 0:
             return False
-         sessions[0].remove()
-        return True                
+        sessions[0].remove()
+        return True
+               
